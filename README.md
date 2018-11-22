@@ -14,7 +14,7 @@
 ```bash
 $ git clone https://github.com/man0s/XMLnXSDSee.git
 $ cd XMLnXSDSee
-$ cd XMLnXSDSee
+$ cd Executables
 $ java -jar XMLnXSDSee.jar
 
 Requires Java SE Runtime Environment 8u144
