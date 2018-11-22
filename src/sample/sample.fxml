@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TableView fx:id="table" focusTraversable="false" layoutX="45.0" layoutY="263.0" prefHeight="173.0" prefWidth="510.0">
+            <columns>
+                <TableColumn fx:id="lessonCol" prefWidth="257.0" text="Lesson" />
+                <TableColumn fx:id="professorCol" minWidth="0.0" prefWidth="132.0" text="Professor" />
+                <TableColumn fx:id="dayCol" minWidth="0.0" prefWidth="104.0" text="Day" />
+            </columns>
+        </TableView>
+        <Pane depthTest="DISABLE" layoutX="45.0" layoutY="52.0" prefHeight="173.0" prefWidth="510.0" style="-fx-border-color: lightgray;">
+            <children>
+                <Button fx:id="addButton" focusTraversable="false" layoutX="427.0" layoutY="131.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Add" />
+                <TextField fx:id="lessonField" focusTraversable="false" layoutX="106.0" layoutY="14.0" prefHeight="25.0" prefWidth="288.0" />
+                <TextField fx:id="professorField" focusTraversable="false" layoutX="106.0" layoutY="54.0" prefHeight="25.0" prefWidth="288.0" />
+                <TextField fx:id="dayField" focusTraversable="false" layoutX="106.0" layoutY="93.0" prefHeight="25.0" prefWidth="288.0" />
+                <Label layoutX="28.0" layoutY="13.0" prefHeight="27.0" prefWidth="56.0" text="Title">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </opaqueInsets>
+                </Label>
+                <Label layoutX="28.0" layoutY="52.0" prefHeight="27.0" prefWidth="69.0" text="Professor">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="28.0" layoutY="92.0" prefHeight="27.0" prefWidth="56.0" text="Day">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="timeField" focusTraversable="false" layoutX="106.0" layoutY="131.0" prefHeight="25.0" prefWidth="288.0" />
+                <Label layoutX="28.0" layoutY="130.0" prefHeight="27.0" prefWidth="56.0" text="Time">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </children>
+            <opaqueInsets>
+                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+            </opaqueInsets>
+        </Pane>
+        <Label layoutX="45.0" layoutY="31.0" prefHeight="20.0" prefWidth="103.0" text="New Lecture">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="comboBox" focusTraversable="false" layoutX="434.0" layoutY="231.0" prefHeight="25.0" prefWidth="121.0" promptText="All Days"/>
+        <MenuBar prefHeight="25.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="xmlButton" mnemonicParsing="false" text="Open an XML file" />
+                        <MenuItem fx:id="xsdButton" mnemonicParsing="false" text="Assign an XSD file" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</Pane>
